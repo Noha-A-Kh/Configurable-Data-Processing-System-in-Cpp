@@ -1,3 +1,6 @@
+#ifndef CONFIGURATION_HPP
+#define CONFIGURATION_HPP
+
 #include <string>
 #include <map>
 
@@ -16,4 +19,7 @@ private:
     std::map<std::string, std::string> options_;
     // parses the files and fills the options_ map
     void parseFile(const std::string &path);
+
 };
+
+#endif

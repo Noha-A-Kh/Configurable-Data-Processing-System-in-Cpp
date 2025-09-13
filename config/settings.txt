@@ -1,5 +1,6 @@
 # Sample configuration for the Configurable Processor system.
 # Set the processor type: Text, Numeric, Image, or Audio.
+# NOTE: Hello 3alam, in my implementation u can add any other options u need "Processor.Options.<option>=<value>"
 Processor.Options.Type=Image
 Processor.Options.Threshold=0.5 
 Processor.Options.MaxRetries=3

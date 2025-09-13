@@ -1,6 +1,5 @@
 #include "ProcessorFactory.hpp"
 #include "Processor.hpp"
-#include "Utilities.hpp"
 
 #include <iostream>
 #include <memory>
