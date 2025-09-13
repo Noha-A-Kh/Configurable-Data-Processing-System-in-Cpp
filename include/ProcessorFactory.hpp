@@ -1,8 +1,12 @@
-class ProcessorFactory
-{
-private:
-    /* data */
+#ifndef PROCESSORFACTORY_HPP
+#define PROCESSORFACTORY_HPP
+
+#include "Processor.hpp"
+#include <string>
+
+class ProcessorFactory {
 public:
-    ProcessorFactory(/* args */);
-    ~ProcessorFactory();
+ static Processor* createProcessor(const std::string& type);
 };
+
+#endif // PROCESSORFACTORY_HPP
