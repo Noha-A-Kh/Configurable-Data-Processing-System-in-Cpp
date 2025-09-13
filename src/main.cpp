@@ -3,15 +3,24 @@
 #include <iostream>
 #include <vector>
 
+
 int main()
 {
     try
     {
         Configuration config("config/settings.txt");
+
         auto processorType = config.getOption("Processor.Options.Type");
+
         auto processor = ProcessorFactory::createProcessor(processorType);
+
         std::vector<std::string> data = {"Sample1", "Sample2", "Sample3"};
         processor->process(data);
+
+        // extra: print all other options 
+        config.printOptions(processorType + "Processor");
+
+        delete processor;
     }
     catch (const std::exception &e)
     {

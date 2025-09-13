@@ -4,9 +4,11 @@
 #include "Processor.hpp"
 #include <string>
 
-class ProcessorFactory {
+class ProcessorFactory
+{
 public:
- static Processor* createProcessor(const std::string& type);
+    /*Description: this function creates a processor by name and throws std::runtime_error if unknown.*/
+    static Processor *createProcessor(const std::string &type);
 };
 
 #endif // PROCESSORFACTORY_HPP
